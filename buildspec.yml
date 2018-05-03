@@ -4,5 +4,8 @@ phases:
     commands:
       - pip install mkdocs
       - mkdocs build
-      - pip install awscli
-      - aws s3 cp site s3://mtec-bls-fall-2017 --recursive
+#      - pip install awscli
+#      - aws s3 cp site s3://mtec-bls-fall-2017 --recursive
+artifacts:
+  files:
+    - site/**/*
